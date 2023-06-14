@@ -178,25 +178,25 @@ document.body.addEventListener("keydown", keyDown);
 function keyDown(event) {
   //key up
 
-  if (event.keyCode == 38 || event.key === 'w') {
+  if (event.keyCode == 38 || event.key === "w") {
     if (y_Velocity == 1) return;
     y_Velocity = -1;
     x_Velocity = 0;
   }
   //key down
-  if (event.keyCode == 40 || event.key === 's') {
+  if (event.keyCode == 40 || event.key === "s") {
     if (y_Velocity == -1) return;
     y_Velocity = 1;
     x_Velocity = 0;
   }
   //key left
-  if (event.keyCode == 37 || event.key === 'a') {
+  if (event.keyCode == 37 || event.key === "a" ){
     if (x_Velocity == 1) return;
     y_Velocity = 0;
     x_Velocity = -1;
   }
   //key right
-  if (event.keyCode == 39 || event.key === 'd') {
+  if (event.keyCode == 39 || event.key === "d") {
     if (x_Velocity == -1) return;
     y_Velocity = 0;
     x_Velocity = 1;
